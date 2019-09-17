@@ -1,42 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    &lt;!&ndash; Required meta tags &ndash;&gt;-->
+<!--    <meta charset="utf-8" />-->
+<!--    <meta-->
+<!--            name="viewport"-->
+<!--            content="width=device-width, initial-scale=1, shrink-to-fit=no"-->
+<!--    />-->
 
-    <title>CS SELU</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/bootstrap.css" />
-    <link rel="stylesheet" href="../css/flaticon.css" />
-    <link rel="stylesheet" href="../css/themify-icons.css" />
-    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
-    <!-- main css -->
-    <link rel="stylesheet" href="../css/expert_instructor.css" />
-</head>
+<!--    <title>CS SELU</title>-->
+<!--    &lt;!&ndash; Bootstrap CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+<!--    <link rel="stylesheet" href="../css/bootstrap.css" />-->
+<!--    <link rel="stylesheet" href="../css/flaticon.css" />-->
+<!--    <link rel="stylesheet" href="../css/themify-icons.css" />-->
+<!--    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />-->
+<!--    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />-->
+<!--    &lt;!&ndash; main css &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="../css/expert_instructor.css" />-->
+<!--</head>-->
 
-<body>
-<h1>Welcome to 420</h1>
-
-
+<!--<body>-->
+<!--<h1>Welcome to 420</h1>-->
 
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-<script src="js/owl-carousel-thumb.min.js"></script>
-<script src="js/jquery.ajaxchimp.min.js"></script>
-<script src="js/mail-script.js"></script>
-<!--gmaps Js-->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-<script src="js/gmaps.min.js"></script>
-<script src="js/theme.js"></script>
-</body>
-</html>
+
+
+<!--<script src="js/jquery-3.2.1.min.js"></script>-->
+<!--<script src="js/popper.js"></script>-->
+<!--<script src="js/bootstrap.min.js"></script>-->
+<!--<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>-->
+<!--<script src="vendors/owl-carousel/owl.carousel.min.js"></script>-->
+<!--<script src="js/owl-carousel-thumb.min.js"></script>-->
+<!--<script src="js/jquery.ajaxchimp.min.js"></script>-->
+<!--<script src="js/mail-script.js"></script>-->
+<!--&lt;!&ndash;gmaps Js&ndash;&gt;-->
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>-->
+<!--<script src="js/gmaps.min.js"></script>-->
+<!--<script src="js/theme.js"></script>-->
+<!--</body>-->
+<!--</html>-->
+
+<span id="template-content">
+    Template Hello World!
+</span>
+
+<script>
+    var me = document.currentScript.ownerDocument;
+    var post = me.querySelector( '#template-content' );
+
+    var container = document.querySelectorAll( '.template-container' );
+
+    //alert( container.length );
+    for(i=0; i<container.length ; i++) {
+        container[i].appendChild( post.cloneNode( true ) );
+    }
+</script>
+
